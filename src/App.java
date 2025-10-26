@@ -26,10 +26,10 @@ public class App {
 			for (int j = 0; j < altura - i - 1; j++)
 				System.out.print(" ");
 			for (int j = 0; j < i * 2 + 1; j++) {
-				if (j == 0 || j == i * 2 || i == altura - 1)
-					System.out.print(caracter);
-				else
-					System.out.print(" ");
+				System.out.print((j == 0 
+								|| j == i * 2 
+								|| i == altura - 1) ?
+								caracter : " ");
 			}
 			System.out.println();
 		}
